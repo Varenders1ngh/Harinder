@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+// Define a class named "Car"
+class Car {
+public:
+    // Constructor to initialize member variables
+    Car(string make, string model, int year) {
+        this->make = make;
+        this->model = model;
+        this->year = year;
+    }
+
+    // Member function to display car information
+    void displayInfo() {
+        cout << "Make: " << make << ", Model: " << model << ", Year: " << year << endl;
+    }
+
+private:
+    string make;
+    string model;
+    int year;
+};
+
+int main() {
+    // Create an object of type Car
+    Car myCar("Toyota", "Corolla", 2020);
+
+    // Call member function to display car information
+    myCar.displayInfo();
+
+    return 0;
+}
